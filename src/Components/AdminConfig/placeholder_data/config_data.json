@@ -1,0 +1,61 @@
+{
+  "Buyer": {
+    "Events": {
+      "name": true,
+      "author": false,
+      "field3": true,
+      "field4": true,
+      "field5": false,
+      "field6": true,
+      "field7": true
+    },
+    "Collection2": {
+      "name": true,
+      "author": false,
+      "field3": true,
+      "field4": true,
+      "field5": false,
+      "field6": true,
+      "field7": false
+    },
+    "Collection3": {
+      "name": true,
+      "author": false,
+      "field3": true,
+      "field4": true,
+      "field5": false,
+      "field6": true,
+      "field7": true,
+      "field8": false
+    }
+  },
+  "Supplier": {
+    "Events": {
+      "name": true,
+      "author": true,
+      "field3": true,
+      "field4": true,
+      "field5": false,
+      "field6": false,
+      "field7": true
+    },
+    "Collection2": {
+      "name": true,
+      "author": false,
+      "field3": true,
+      "field4": true,
+      "field5": false,
+      "field6": true,
+      "field7": true
+    },
+    "Collection3": {
+      "name": true,
+      "author": false,
+      "field3": true,
+      "field4": true,
+      "field5": false,
+      "field6": true,
+      "field7": true
+    }
+  }
+}

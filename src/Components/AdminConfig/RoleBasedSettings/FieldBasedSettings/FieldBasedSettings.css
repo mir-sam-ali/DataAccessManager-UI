@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.checkBox-group-div {
+  height: 100%;
+  padding-top: 3%;
+  padding-left: 2%;
+}
+
+.checkBox-div {
+  width: fit-content;
+  margin: 1%;
+  font-size: 1.1rem !important;
+  font-family: 'Roboto', sans-serif;
+}
+
+.checkBox-div input {
+  position: unset;
+  margin-right: 10px;
+}
+
+.button-div-FieldBasedSettings {
+  width: 100%;
+  padding-left: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 3%;
+}
