@@ -9,6 +9,7 @@ const FieldBasedSettings = (props) => {
   const [collectionSettings, setCollectionSettings] = useState(null);
 
   useEffect(() => {
+    // eslint-disable-next-line
     var fieldAccessString = eval(
       '(' + configJson[`${props.roleName}`][`${props.collectionName}`] + ')'
     );
