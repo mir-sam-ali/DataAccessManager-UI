@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tab, Col, Nav, Row, Navbar } from 'react-bootstrap';
+import { Tab, Col, Row, Navbar } from 'react-bootstrap';
 import roles from './placeholder_data/roles.json';
 import RoleBasedSettings from './RoleBasedSettings/RoleBasedSettings';
 import './AdminConfig.css';

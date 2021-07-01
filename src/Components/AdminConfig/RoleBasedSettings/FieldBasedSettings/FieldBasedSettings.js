@@ -15,7 +15,7 @@ const FieldBasedSettings = (props) => {
         access: fieldAccessValues[`${keyName}`],
       }))
     );
-  }, []);
+  }, [props.collectionName, props.roleName]);
   return (
     <div className="checkBox-group-div">
       {collectionSettings ? (
