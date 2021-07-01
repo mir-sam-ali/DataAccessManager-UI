@@ -5,11 +5,19 @@
   padding-left: 2%;
 }
 
+.checkBox-group-div .form-check {
+  padding-left: 3%;
+}
+
 .checkBox-div {
   width: fit-content;
   margin: 1%;
-  font-size: 1.1rem !important;
+  padding-left: 3%;
+  font-size: 1rem !important;
   font-family: 'Roboto', sans-serif;
+  border-left: 0.1px solid rgba(26, 26, 26, 0.2);
+  border-bottom: 0.1px solid rgba(26, 26, 26, 0.2);
+  border-bottom-left-radius: 4px;
 }
 
 .checkBox-div input {
@@ -24,4 +32,16 @@
   flex-direction: column;
   align-items: flex-start;
   margin-top: 3%;
+}
+
+.fieldName p {
+  font-size: 1rem !important;
+  font-family: 'Roboto', sans-serif;
+  text-align: start;
+  font-weight: 600;
+  border-left: 0.1px solid rgba(26, 26, 26, 0.2);
+  border-bottom: 0.1px solid rgba(26, 26, 26, 0.2);
+  border-bottom-left-radius: 4px;
+  padding-left: 1%;
+  width: fit-content;
 }

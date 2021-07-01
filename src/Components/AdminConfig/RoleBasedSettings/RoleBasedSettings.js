@@ -25,7 +25,11 @@ const RoleBasedSettings = (props) => {
           id="uncontrolled-tab-example"
         >
           {collections.map((collectionName) => (
-            <Tab eventKey={collectionName} title={collectionName}>
+            <Tab
+              eventKey={collectionName}
+              title={collectionName}
+              key={collectionName}
+            >
               <FieldBasedSettings
                 collectionName={collectionName}
                 roleName={props.roleName}

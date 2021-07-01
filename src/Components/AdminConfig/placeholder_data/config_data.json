@@ -1,61 +1,8 @@
 {
   "Buyer": {
-    "Events": {
-      "name": true,
-      "author": false,
-      "field3": true,
-      "field4": true,
-      "field5": false,
-      "field6": true,
-      "field7": true
-    },
-    "Collection2": {
-      "name": true,
-      "author": false,
-      "field3": true,
-      "field4": true,
-      "field5": false,
-      "field6": true,
-      "field7": false
-    },
-    "Collection3": {
-      "name": true,
-      "author": false,
-      "field3": true,
-      "field4": true,
-      "field5": false,
-      "field6": true,
-      "field7": true,
-      "field8": false
-    }
+    "Events": "{InformationCluster_1:{InformationID_1:{InformationID_1_0:1,InformationID_1_1:0},InformationID_2:1,InformationID_3:1},InformationCluster_2:{InformationID_4:1,InformationID_5:1,InformationID_6:1},InformationCluster_3:{InformationID_7:1,InformationID_8:1,InformationID_9:1}}"
   },
   "Supplier": {
-    "Events": {
-      "name": true,
-      "author": true,
-      "field3": true,
-      "field4": true,
-      "field5": false,
-      "field6": false,
-      "field7": true
-    },
-    "Collection2": {
-      "name": true,
-      "author": false,
-      "field3": true,
-      "field4": true,
-      "field5": false,
-      "field6": true,
-      "field7": true
-    },
-    "Collection3": {
-      "name": true,
-      "author": false,
-      "field3": true,
-      "field4": true,
-      "field5": false,
-      "field6": true,
-      "field7": true
-    }
+    "Events": "{InformationCluster_1:{InformationID_1:0,InformationID_2:1,InformationID_3:1},InformationCluster_2:{InformationID_4:1,InformationID_5:1,InformationID_6:1},InformationCluster_3:{InformationID_7:1,InformationID_8:1,InformationID_9:1}}"
   }
 }

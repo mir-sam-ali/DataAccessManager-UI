@@ -29,7 +29,7 @@ const AdminConfig = () => {
           <Col sm={9} style={{ paddingLeft: '0%' }}>
             <Tab.Content>
               {roles.roles.map((roleName) => (
-                <Tab.Pane eventKey={roleName}>
+                <Tab.Pane eventKey={roleName} key={roleName}>
                   <RoleBasedSettings roleName={roleName} />
                 </Tab.Pane>
               ))}
