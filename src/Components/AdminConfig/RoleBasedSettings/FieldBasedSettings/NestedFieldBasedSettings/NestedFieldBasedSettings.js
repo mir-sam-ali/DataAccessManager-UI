@@ -6,11 +6,16 @@ const NestedFieldBasedSettings = (props) => {
   return (
     <div className="root-NestedFieldBasedSettings">
       {Object.keys(props.settings).map((keyName) => {
+        let keyArray = [...props.keyNameArray];
+        keyArray.push(keyName);
         if (Object.keys(props.settings[keyName]).length === 0) {
           return (
             <Form.Check
               className="checkBox-div"
               type={'checkbox'}
+              onChange={(e) => {
+                props.toggleCheckBoxHandler(e, keyArray);
+              }}
               id={keyName}
               label={keyName}
               defaultChecked={props.settings[keyName] === 1}
@@ -20,7 +25,11 @@ const NestedFieldBasedSettings = (props) => {
           return (
             <div className="fieldName">
               <p>{keyName}</p>
-              <NestedFieldBasedSettings settings={props.settings[keyName]} />
+              <NestedFieldBasedSettings
+                keyNameArray={keyArray}
+                toggleCheckBoxHandler={props.toggleCheckBoxHandler}
+                settings={props.settings[keyName]}
+              />
             </div>
           );
         }
