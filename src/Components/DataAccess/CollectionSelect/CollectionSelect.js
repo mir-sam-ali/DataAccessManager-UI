@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Form } from 'react-bootstrap';
+import axios from 'axios';
 import collectionJSON from '../../AdminConfig/placeholder_data/collections.json';
 import './CollectionSelect.css';
 
@@ -7,7 +8,18 @@ const CollectionSelect = (props) => {
   const [collections, setCollections] = useState([]);
 
   useEffect(() => {
-    setCollections(collectionJSON.collections);
+    axios
+      .get(`${process.env.REACT_APP_BASE_URL}/getcollections`)
+      .then((res) => {
+        console.log(res);
+        const collectionNames = res.data.filter(
+          (name) => name !== 'Users' && name !== 'AccessRights'
+        );
+        setCollections(collectionNames);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }, []);
   return (
     <Form className="CollectionSelect">

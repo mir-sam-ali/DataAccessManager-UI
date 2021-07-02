@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import collectionNames from '../placeholder_data/collections.json';
 import FieldBasedSettings from './FieldBasedSettings/FieldBasedSettings';
 import { Tabs, Tab } from 'react-bootstrap';
+import axios from 'axios';
 import './RoleBasedSettings.css';
 
 const RoleBasedSettings = (props) => {
@@ -9,9 +10,20 @@ const RoleBasedSettings = (props) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    console.log('UseEffect', collectionNames.collections);
-    setLoading(false);
-    setCollections(collectionNames.collections);
+    axios
+      .get(`${process.env.REACT_APP_BASE_URL}/getcollections`)
+      .then((res) => {
+        console.log(res);
+        const collectionNames = res.data.filter(
+          (name) => name !== 'Users' && name !== 'AccessRights'
+        );
+        setCollections(collectionNames);
+
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }, []);
 
   return (
@@ -32,7 +44,7 @@ const RoleBasedSettings = (props) => {
             >
               <FieldBasedSettings
                 collectionName={collectionName}
-                roleName={props.roleName}
+                role={props.role}
               />
             </Tab>
           ))}

@@ -5,10 +5,10 @@ import './SideBar.css';
 const SideBar = (props) => {
   return (
     <Nav variant="pills" className="flex-column SideBar">
-      {props.roles.map((roleName) => (
+      {props.roles.map((role) => (
         <Nav.Item>
-          <Nav.Link eventKey={roleName} key={roleName}>
-            {roleName}
+          <Nav.Link eventKey={role.userRole} key={role.userRole}>
+            {role.userRole}
           </Nav.Link>
         </Nav.Item>
       ))}
